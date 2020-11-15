@@ -28,7 +28,7 @@ static void getNonBlank();
 
 /******************************************************/
 /* main driver */
-int main(/*int argc, char **argv*/) 
+int main(int argc, char **argv) 
 {
     char c;
     /* Open the input data file and process its contents */
@@ -45,8 +45,9 @@ int main(/*int argc, char **argv*/)
     // If user provided a file that DNE: 
     // Display appropriate error message, exit code of 3
 		// Saved line for linux file input
-		//if ((in_fp = fopen(argv[1], "r")) == NULL) {
-		if ((in_fp = fopen("test.danc", "r")) == NULL) {
+		if ((in_fp = fopen(argv[1], "r")) == NULL) {
+		// Used below for testing in repl.it
+		//if ((in_fp = fopen("test.danc", "r")) == NULL) {
         printf("ERROR - cannot open file \n");
         exit(3);
     } 
