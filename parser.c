@@ -40,7 +40,7 @@ void input(char lexeme[], char tokenName[]){
 				//printf("lexeme: %s / token name: %s / nextToken: %d -here\n", lexeme, tokenName, nextToken);
 			}
 			// if the next token isn't keyod, semicolon or ~eof? error out
-			if(nextToken != KEY_OD && nextToken != SEMICOLON){
+			if(nextToken != KEY_OD && nextToken != SEMICOLON && nextToken != EOF){
 				error(lexeme, tokenName);
 			}
 			break;
@@ -77,7 +77,7 @@ void input(char lexeme[], char tokenName[]){
 
 				if(nextToken == KEY_OD){
 					lex();
-					if(nextToken == KEY_OD || nextToken == SEMICOLON){
+					if(nextToken == KEY_OD || nextToken == SEMICOLON || nextToken == EOF){
 						//error(lexeme, tokenName);
 					}
 					else{
@@ -99,7 +99,7 @@ void input(char lexeme[], char tokenName[]){
 
 		case KEY_OD:
 			lex();
-			if(nextToken != KEY_OD || nextToken != SEMICOLON){
+			if(nextToken != KEY_OD || nextToken != SEMICOLON || nextToken != EOF){
 				error(lexeme, tokenName);
 			}
 			else{
@@ -186,7 +186,7 @@ void factor(char lexeme[], char tokenName[]){
 
   	    if (nextToken == RIGHT_PAREN) {
   	        lex(); 
-						if(nextToken != KEY_OD && nextToken != SEMICOLON && nextToken != EOF){
+						if(nextToken != KEY_OD && nextToken != SEMICOLON && nextToken != EOF && nextToken != ADD_OP){
 							error(lexeme, tokenName);
 						}
   	    } 

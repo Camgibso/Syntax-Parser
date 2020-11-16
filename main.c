@@ -35,12 +35,12 @@ int main(int argc, char **argv)
 
     // If user didn't provide a file:
     // Display appropriate error message, exit code of 2
-    /*
+    
 		if (argv[1] == NULL){
         printf("No file provided \n");
         exit(2);
     }
-		*/
+		
 
     // If user provided a file that DNE: 
     // Display appropriate error message, exit code of 3

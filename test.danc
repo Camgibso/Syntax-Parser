@@ -16,4 +16,4 @@ while x=0 do
 	q:= n;
 	x:=1
 od;
-x:=t;
+x:=t
