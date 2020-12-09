@@ -24,17 +24,17 @@ your solution is only required to find and report the 1st syntax error
 1) Your solution must print out “DanC Parser :: R<#>” as the first line of output with <#> being replaced by
 your R#. The double colon “::” is required for correct grading of your submission.
 2) If the provided user file is free of syntax errors:
-a. Your solution must print out “Syntax Validated” as the last line of output.
-b. Your solution must return with an exit code of 0.
+  a. Your solution must print out “Syntax Validated” as the last line of output.
+  b. Your solution must return with an exit code of 0.
 3) If the provided user file contains syntax errors:
-a. Your solution must print out “Error encounter: The next lexeme was <lexeme> and the next
+  a. Your solution must print out “Error encounter: The next lexeme was <lexeme> and the next
 token was <token>”
-i. Where <lexeme> is the lexeme that caused the problem (examples: “x”, “<>”)
-ii. Where <token> is the uppercase name of the token (examples: “IDENT”, “UNKNOWN”)
+    i. Where <lexeme> is the lexeme that caused the problem (examples: “x”, “<>”)
+    ii. Where <token> is the uppercase name of the token (examples: “IDENT”, “UNKNOWN”)
 b. Your solution must return with an exit code of 1.
 4) If the user did not provide a file as input:
-a. Your solution must display an appropriate error message.
-b. Your solution must return with an exit code of 2.
+  a. Your solution must display an appropriate error message.
+  b. Your solution must return with an exit code of 2.
 5) If the user did provide a file as input but the file does not exist:
-a. Your solution must display an appropriate error message.
-b. Your solution must return with an exit code of 3.
+  a. Your solution must display an appropriate error message.
+  b. Your solution must return with an exit code of 3.
