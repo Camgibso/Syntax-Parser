@@ -1,4 +1,4 @@
-// Cameron Gibson (R#11424503) | Assignment #4 | 10/26/20
+// Cameron Gibson (R#) | Assignment #4 | 10/26/20
 // 
 //  Lexical analyzer
 
